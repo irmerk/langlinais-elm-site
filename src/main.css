@@ -8,22 +8,127 @@
 [data-elm-hot='true'] {
   height: inherit;
 }
+@import url('https://fonts.googleapis.com/css?family=Cairo|Montserrat+Alternates');
 
 body {
-  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande',
-    'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande',
+    'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; */
+  font-family: 'Montserrat Alternates', sans-serif;
   margin: 0;
   text-align: center;
   color: #293c4b;
 }
 
+/* Title - Name */
 h1 {
-  font-size: 30px;
+  font-size: 42px;
+  max-width: 450px;
+  margin-top: 0;
 }
 
+/* General text */
+p {
+  font-size: 1.2rem;
+  font-family: 'Cairo', sans-serif;
+  max-width: 400px;
+  margin: 10px;
+}
+
+/* Links within general text */
+.headerLink {
+  font-size: 1.2rem !important;
+}
+
+/* Social link icon wrapper */
+.socialLink {
+  margin: 20px;
+}
+
+/* All child social links */
+.socialLink > * {
+  margin: 15px;
+}
+
+/* Navigation links within site */
+.navLink {
+  line-height: 50px;
+}
+
+/* link hover transition activity */
+a,
+i {
+  color: #293c4b;
+  font-weight: 400;
+  text-decoration: none;
+
+  /*for fade effect on hover*/
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* Specify links */
+a:link {
+  font-size: 1.5rem;
+  color: #293c4b;
+}
+
+/* Specify visited links */
+a:visited {
+  color: #293c4b;
+}
+
+/* Specify hovered links */
+a:hover {
+  color: #8795e8;
+  transition: 0.15s;
+}
+
+/* Specify active links */
+a:active {
+  color: #94d0ff;
+}
+
+/* Enlarge social icons */
+i {
+  padding: 5px;
+}
+
+/* Specify social icon hover color */
+.fa-linkedin:hover {
+  color: #0976b4;
+}
+
+/* Specify social icon hover color */
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+/* Specify social icon hover color */
+.fa-medium:hover {
+  color: #00ab6c;
+}
+
+/* Specify social icon hover color */
+.fa-github:hover {
+  color: #ad5c51;
+}
+
+/* Headshot image */
 img {
-  margin: 20px 0;
+  margin: 60px 0 20px 0;
   max-width: 200px;
   border-radius: 50%;
-  border: 0.1rem solid #ead1ff;
+  border: 2px solid #ad8cff;
+  /* #FF6AD5 #AD8CFF #8795E8 #94D0FF #8B87E8*/
+}
+
+/* Navigation and header bar on left */
+.sideBar {
+  height: 100vh;
+  position: absolute;
+  background-color: #fff;
+  border-right: 1px #e4d9ff solid;
 }
