@@ -1,8 +1,10 @@
 module Main exposing (..)
 
 import Browser
+import Browser.Navigation as Nav
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Url
 
 
 ---- MODEL ----
@@ -28,6 +30,16 @@ type Msg
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     ( model, Cmd.none )
+--   case msg of
+--     LinkClicked urlRequest ->
+--       case urlRequest of
+--         Browser.Internal url ->
+--           ( model, Nav.pushUrl model.key (Url.toString url) )
+
+--     UrlChanged url ->
+--       ( { model | url = url }
+--       , Cmd.none
+--       )
 
 
 
@@ -37,7 +49,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div [ class "sideBar" ]   
-        [ a [ href "https://jolenelanglinais.com" ] [ img [ src "/headshot.jpg" ] [] ] 
+        [ a [ href "https://jolenelanglinais.com" ] [ img [ src "/headshot.jpg", class "headshot" ] [] ] 
         , a [ href "https://jolenelanglinais.com" ] [ h1 [] [ text "Jolene Langlinais" ] ] 
         , p []
         [ text "A full stack software engineer at "
@@ -52,15 +64,15 @@ view model =
            , a [ href "https://medium.com/@jolene.langlinais" , target "_blank" ] [ i [ class "fa fa-medium" ] []  ]
            , a [ href "https://github.com/irmerk" , target "_blank" ] [ i [ class "fa fa-github" ] [] ]
         ]
-        , div [ class "navLink" ] [ 
-            a [ href "resume" ] [ text "Resume" ] 
-        ]
-        , div [ class "navLink" ] [ 
-            a [ href "projects" ] [ text "Projects" ] 
-        ]
-        , div [ class "navLink" ] [ 
-            a [ href "blog" ] [ text "Blog" ] 
-        ]
+        -- , div [ class "navLink" ] [
+        --     a [ href "resume" ] [ text "Resume" ] 
+        -- ]
+        -- , div [ class "navLink" ] [
+        --     a [ href "projects" ] [ text "Projects" ] 
+        -- ]
+        -- , div [ class "navLink" ] [
+        --     a [ href "blog" ] [ text "Blog" ] 
+        -- ]
     ]
 
 
