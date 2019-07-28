@@ -22,16 +22,16 @@ body {
 /* Title - Name */
 h1 {
   font-size: 42px;
-  max-width: 450px;
-  margin-top: 0;
+  max-width: 400px;
+  margin: 0 auto 20px;
 }
 
 /* General text */
 p {
   font-size: 1.2rem;
   font-family: 'Cairo', sans-serif;
-  max-width: 400px;
-  margin: 10px;
+  max-width: 700px;
+  margin: 10px auto;
 }
 
 /* Links within general text */
@@ -117,18 +117,19 @@ i {
 }
 
 /* Headshot image */
-img {
-  margin: 60px 0 20px 0;
+.headshot {
+  margin: 120px 0 20px 0;
   max-width: 200px;
   border-radius: 50%;
   border: 2px solid #ad8cff;
+  vertical-align: middle;
   /* #FF6AD5 #AD8CFF #8795E8 #94D0FF #8B87E8*/
 }
 
 /* Navigation and header bar on left */
 .sideBar {
   height: 100vh;
-  position: absolute;
+  /* position: absolute; */
   background-color: #fff;
   border-right: 1px #e4d9ff solid;
 }
