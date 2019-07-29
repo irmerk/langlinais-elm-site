@@ -49,20 +49,24 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div [ class "sideBar" ]   
-        [ a [ href "https://jolenelanglinais.com" ] [ img [ src "/headshot.jpg", class "headshot" ] [] ] 
+        [ a [ href "https://jolenelanglinais.com" ] [ img [ src "/headshot.jpg", class "headshot", alt "Headshot Image" ] [] ] 
         , a [ href "https://jolenelanglinais.com" ] [ h1 [] [ text "Jolene Langlinais" ] ] 
         , p []
         [ text "A full stack software engineer at "
-        , a [ href "https://clause.io" , target "_blank" , class "headerLink" ] [ text "Clause.io"] 
+        , a [ href "https://clause.io" , attribute "rel" "noopener" , target "_blank" , class "headerLink" ] [ text "Clause.io"] 
         , text " and maintainer at the "
-        , a [ href "https://www.accordproject.org" , target "_blank" , class "headerLink"  ] [ text "Accord Project"] 
+        , a [ href "https://www.accordproject.org" , attribute "rel" "noopener" , target "_blank" , class "headerLink"  ] [ text "Accord Project"] 
         , text ", creating sophisticated systems with code and design."
         ]
         , div [ class "socialLink" ] [
-            a [ href "https://www.linkedin.com/in/jolene-langlinais/" , target "_blank" ] [ i [ class "fa fa-linkedin" ] []  ]
-           , a [ href "https://twitter.com/jolanglinais" , target "_blank" ] [ i [ class "fa fa-twitter" ] []  ]
-           , a [ href "https://medium.com/@jolene.langlinais" , target "_blank" ] [ i [ class "fa fa-medium" ] []  ]
-           , a [ href "https://github.com/irmerk" , target "_blank" ] [ i [ class "fa fa-github" ] [] ]
+            a [ href "https://www.linkedin.com/in/jolene-langlinais/" , attribute "rel" "noopener" , attribute "aria-label" "LinkedIn" , target "_blank" ] 
+              [ i [ class "fa fa-linkedin" ] []  ]
+           , a [ href "https://twitter.com/jolanglinais" , attribute "rel" "noopener" , attribute "aria-label" "Twitter" , target "_blank" ]
+               [ i [ class "fa fa-twitter" ] []  ]
+           , a [ href "https://medium.com/@jolene.langlinais" , attribute "rel" "noopener" , attribute "aria-label" "Medium" , target "_blank" ]
+               [ i [ class "fa fa-medium" ] []  ]
+           , a [ href "https://github.com/irmerk" , attribute "rel" "noopener" , attribute "aria-label" "GitHub" , target "_blank" ]
+               [ i [ class "fa fa-github" ] [] ]
         ]
         -- , div [ class "navLink" ] [
         --     a [ href "resume" ] [ text "Resume" ] 
