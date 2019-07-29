@@ -14,6 +14,7 @@ body {
   /* font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande',
     'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; */
   font-family: 'Montserrat Alternates', sans-serif;
+  font-display: swap;
   margin: 0;
   text-align: center;
   color: #293c4b;
@@ -30,6 +31,7 @@ h1 {
 p {
   font-size: 1.2rem;
   font-family: 'Cairo', sans-serif;
+  font-display: swap;
   max-width: 700px;
   margin: 10px auto;
 }
@@ -82,13 +84,13 @@ a:visited {
 
 /* Specify hovered links */
 a:hover {
-  color: #8795e8;
+  color: #576ce0;
   transition: 0.15s;
 }
 
 /* Specify active links */
 a:active {
-  color: #94d0ff;
+  color: #0076d1;
 }
 
 /* Enlarge social icons */
@@ -118,7 +120,7 @@ i {
 
 /* Headshot image */
 .headshot {
-  margin: 120px 0 20px 0;
+  margin: 70px 0 20px 0;
   max-width: 200px;
   border-radius: 50%;
   border: 2px solid #ad8cff;
@@ -131,5 +133,6 @@ i {
   height: 100vh;
   /* position: absolute; */
   background-color: #fff;
-  border-right: 1px #e4d9ff solid;
+  /* border-right: 1px #e4d9ff solid; */
+  margin: 0 10px;
 }
