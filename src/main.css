@@ -99,21 +99,21 @@ i {
 }
 
 /* Specify social icon hover color */
-.fa-linkedin:hover {
+.fa-linkedin-in:hover {
   color: #0976b4;
 }
-
-/* Specify social icon hover color */
 .fa-twitter:hover {
   color: #55acee;
 }
-
-/* Specify social icon hover color */
-.fa-medium:hover {
+.fa-envelope:hover {
+  color: #d44638;
+}
+.fa-dev:hover {
+  color: #7a52ff;
+}
+.fa-medium-m:hover {
   color: #00ab6c;
 }
-
-/* Specify social icon hover color */
 .fa-github:hover {
   color: #ad5c51;
 }
