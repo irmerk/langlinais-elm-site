@@ -24,7 +24,7 @@ body {
 h1 {
   font-size: 42px;
   max-width: 400px;
-  margin: 0 auto 20px;
+  margin: 20px auto;
 }
 
 /* General text */
@@ -43,12 +43,12 @@ p {
 
 /* Social link icon wrapper */
 .socialLink {
-  margin: 20px;
+  margin: 20px auto;
 }
 
 /* All child social links */
 .socialLink > * {
-  margin: 15px;
+  margin: 8px;
 }
 
 /* Navigation links within site */
@@ -120,7 +120,7 @@ i {
 
 /* Headshot image */
 .headshot {
-  margin: 70px 0 20px 0;
+  /* margin: -20px 0 0; */
   max-width: 200px;
   border-radius: 50%;
   border: 2px solid #ad8cff;
@@ -129,10 +129,16 @@ i {
 }
 
 /* Navigation and header bar on left */
-.sideBar {
+.page {
+  display: grid;
   height: 100vh;
   /* position: absolute; */
   background-color: #fff;
   /* border-right: 1px #e4d9ff solid; */
-  margin: 0 10px;
+  /* margin: auto 10px; */
+}
+
+/* Navigation and header bar on left */
+.main {
+  place-self: center;
 }

@@ -48,8 +48,8 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    div [ class "sideBar" ]   
-        [ a [ href "https://jolenelanglinais.com" ] [ img [ src "/headshot.jpg", class "headshot", alt "Headshot Image" ] [] ] 
+    div [ class "page" ]   
+        [ div [ class "main" ] [ a [ href "https://jolenelanglinais.com" ] [ img [ src "/headshot.jpg", class "headshot", alt "Headshot Image" ] [] ] 
         , a [ href "https://jolenelanglinais.com" ] [ h1 [] [ text "Jolene Langlinais" ] ] 
         , p []
         [ text "A full stack software engineer at "
@@ -71,7 +71,7 @@ view model =
               [ i [ class "fab fa-linkedin-in" ] [] ]
            , a [ href "https://github.com/irmerk" , attribute "rel" "noopener" , attribute "aria-label" "GitHub" , target "_blank" ]
                [ i [ class "fab fa-github" ] [] ]
-        ]
+        ] ]
         -- , div [ class "navLink" ] [
         --     a [ href "resume" ] [ text "Resume" ] 
         -- ]
