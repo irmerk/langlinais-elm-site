@@ -66,7 +66,7 @@ view model =
            , a [ href "https://dev.to/irmerk" , attribute "rel" "noopener" , attribute "aria-label" "DEV Community" , target "_blank" ]
                [ i [ class "fab fa-dev" ] [] ]
            , a [ href "mailto:jolenelanglinais@gmail.com?subject=Greetings, Earthling" , attribute "rel" "noopener" , attribute "aria-label" "Email" , target "_blank" ]
-               [ i [ class "fa fa-envelope" ] [] ]
+               [ i [ class "fas fa-envelope-square" ] [] ]
            , a [ href "https://www.linkedin.com/in/jolene-langlinais/" , attribute "rel" "noopener" , attribute "aria-label" "LinkedIn" , target "_blank" ]
               [ i [ class "fab fa-linkedin-in" ] [] ]
            , a [ href "https://github.com/irmerk" , attribute "rel" "noopener" , attribute "aria-label" "GitHub" , target "_blank" ]
