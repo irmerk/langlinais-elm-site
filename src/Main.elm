@@ -56,7 +56,7 @@ view model =
         , a [ href "https://clause.io" , attribute "rel" "noopener" , target "_blank" , class "headerLink" ] [ text "Clause.io"] 
         , text " and maintainer at the "
         , a [ href "https://www.accordproject.org" , attribute "rel" "noopener" , target "_blank" , class "headerLink"  ] [ text "Accord Project"] 
-        , text ", creating sophisticated systems with code and design."
+        , text ", designing sophisticated systems with code"
         ]
         , div [ class "socialLink" ] [
             a [ href "https://twitter.com/jolanglinais" , attribute "rel" "noopener" , attribute "aria-label" "Twitter" , target "_blank" ]
